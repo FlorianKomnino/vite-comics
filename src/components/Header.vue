@@ -28,18 +28,27 @@
 </template>
 
 <style scoped>
+nav {
+    display: flex;
+}
+
 ul {
+    margin: auto 0;
     display: flex;
 }
 
 li {
-    list-style-type: none;
     padding: 10px;
 }
 
 img {
     height: 80%;
     margin: auto;
+}
+
+figure {
+    height: 100%;
+    display: flex;
 }
 
 div.primary-logo {

@@ -22,6 +22,16 @@
 </template>
 
 <style scoped>
+figure {
+    height: 100%;
+    display: flex;
+}
+
+h2 {
+    color: white;
+    margin: auto 0;
+}
+
 div.contentGoesHere {
     background-color: #1c1c1c;
 }
@@ -33,14 +43,9 @@ div.blueBar {
 div.contentGoesHere,
 div.blueBar {
     width: 100vw;
-    height: 130px;
+    height: 100px;
     margin: 0 auto;
     padding: 0;
     display: flex;
-}
-
-h2 {
-    color: white;
-    margin: auto 0;
 }
 </style>
