@@ -3,17 +3,20 @@
 </script>
 
 <template>
-
     <div class="contentGoesHere">
-        <h2>
-            Content goes here
-        </h2>
+        <div class="innerContainer">
+            <h2>
+                Content goes here
+            </h2>
+        </div>
     </div>
 
     <div class="blueBar">
-        <h2>
-            Blue Bar content goes here
-        </h2>
+        <div class="innerContainer">
+            <h2>
+                Blue Bar content goes here
+            </h2>
+        </div>
     </div>
 
 </template>
@@ -38,6 +41,6 @@ div.blueBar {
 
 h2 {
     color: white;
-    margin: auto;
+    margin: auto 0;
 }
 </style>

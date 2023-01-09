@@ -3,21 +3,26 @@
 </script>
 
 <template>
-    <div class="container">
-        <div class="primary-logo">
-            <img src="../assets/img/dc-logo.png" alt="DC Logo">
-        </div>
+    <div class="outerContainer">
 
-        <nav>
-            <ul>
-                <li>characters</li>
-                <li>characters</li>
-                <li>characters</li>
-                <li>characters</li>
-                <li>characters</li>
-                <li>characters</li>
-            </ul>
-        </nav>
+        <div class="innerContainer">
+            <div class="primary-logo">
+                <figure>
+                    <img src="../assets/img/dc-logo.png" alt="DC Logo">
+                </figure>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>characters</li>
+                    <li>characters</li>
+                    <li>characters</li>
+                    <li>characters</li>
+                    <li>characters</li>
+                    <li>characters</li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
 </template>
@@ -33,16 +38,21 @@ li {
 }
 
 img {
-    height: 100%;
+    height: 80%;
+    margin: auto;
 }
 
 div.primary-logo {
     height: 70px;
 }
 
-.container {
+.outerContainer {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+.innerContainer {
     justify-content: space-between;
 }
 </style>
