@@ -1,10 +1,10 @@
 <script>
-import ComicsObject from '../json/dc-comics.json';
+import ComicsArray from '../json/dc-comics.json';
 
 
 export default {
     components: {
-        ComicsObject,
+        ComicsArray,
     }
 }
 </script>
