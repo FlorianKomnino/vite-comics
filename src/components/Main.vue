@@ -1,10 +1,16 @@
 <script>
-import ComicsArray from '../json/dc-comics.json';
-
+import comicsArray from '../json/dc-comics.json';
+import CardComponent from './CardComponent.vue';
 
 export default {
     components: {
-        ComicsArray,
+        CardComponent,
+    },
+
+    data() {
+        return {
+            comics: comicsArray,
+        }
     }
 }
 </script>
@@ -15,6 +21,19 @@ export default {
             <img src="../assets/img/jumbotron.jpg" alt="jumbotron image">
         </div>
     </div>
+
+    <section class="comicsWrapper">
+        <div class="innerContainer">
+            <div class="sectionTitle">
+                <h1>
+                    current series
+                </h1>
+            </div>
+
+            <CardComponent v-for="comic in comics" :imagePath="comic.thumb" :serie="comic.series" />
+
+        </div>
+    </section>
 
     <div class="blueBar">
         <div class="innerContainer">
@@ -55,6 +74,27 @@ div.blueBar {
     height: 150px;
 }
 
+section.comicsWrapper {
+    color: white;
+    height: 300px;
+    background-color: #1c1c1c;
+
+    .innerContainer {
+        position: relative;
+    }
+}
+
+.innerContainer .sectionTitle {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: #0282f9;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+section.comicsWrapper,
 div.contentGoesHere,
 div.blueBar {
     width: 100%;
