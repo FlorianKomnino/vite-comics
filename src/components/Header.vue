@@ -1,5 +1,25 @@
 <script>
-
+export default {
+    data() {
+        return {
+            dcComics: {
+                title: 'dc comics',
+                list: [
+                    'characters',
+                    'comics',
+                    'movies',
+                    'TV',
+                    'games',
+                    'collectibles',
+                    'videos',
+                    'fans',
+                    'news',
+                    'shop',
+                ]
+            },
+        }
+    }
+}
 </script>
 
 <template>
@@ -14,12 +34,7 @@
 
             <nav>
                 <ul>
-                    <li>characters</li>
-                    <li>characters</li>
-                    <li>characters</li>
-                    <li>characters</li>
-                    <li>characters</li>
-                    <li>characters</li>
+                    <li v-for="listItem, index in dcComics.list">{{ dcComics.list[index] }}</li>
                 </ul>
             </nav>
         </div>
@@ -27,18 +42,29 @@
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 nav {
     display: flex;
 }
 
 ul {
-    margin: auto 0;
+    height: 100%;
     display: flex;
+    align-items: center;
 }
 
 li {
-    padding: 10px;
+    height: 100%;
+    padding: 2rem 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid #0282f9;
+        color: #0282f9;
+    }
 }
 
 img {

@@ -8,7 +8,6 @@ export default {
         price: { type: Number, required: false },
         comicType: { type: String, required: false },
     },
-
 }
 </script>
 
@@ -18,7 +17,7 @@ export default {
         <figure>
             <img :src="imagePath" alt="comic wallpaper">
         </figure>
-        <h6 class="serie">{{ serie }}</h6>
+        <h5 class="serie">{{ serie }}</h5>
     </div>
 </template>
 
@@ -31,7 +30,7 @@ export default {
 }
 
 div.comicElement {
-    height: 130px;
+    height: 175px;
     width: (calc(100% / 6) - 4);
     margin: 1rem;
 
@@ -42,11 +41,17 @@ div.comicElement {
     }
 
     img {
+        margin-top: 1rem;
         width: 100%;
     }
 }
 
-h6.serie {
+h5.serie {
+    padding: 1rem 0;
     color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75rem;
+    ;
 }
 </style>

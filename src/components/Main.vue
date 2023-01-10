@@ -10,6 +10,14 @@ export default {
     data() {
         return {
             comics: comicsArray,
+
+            blueBarList: [
+                'digital comicas',
+                'dc merchandise',
+                'subscription',
+                'comic shop locator',
+                'dc power visa',
+            ],
         }
     }
 }
@@ -33,6 +41,9 @@ export default {
             <CardComponent v-for="comic in comics" :imagePath="comic.thumb" :serie="comic.series" />
 
         </div>
+        <div class="innerContainer">
+            <button>load more</button>
+        </div>
     </section>
 
     <div class="blueBar">
@@ -54,6 +65,15 @@ figure {
 h2 {
     color: white;
     margin: auto 0;
+}
+
+button {
+    padding: 0.5rem 3rem;
+    color: white;
+    background-color: #0282f9;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
 }
 
 div.jumbotron {
@@ -83,7 +103,7 @@ section.comicsWrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
 }
 
@@ -96,8 +116,12 @@ section.comicsWrapper {
     text-transform: uppercase;
 }
 
+section.comicsWrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
 
-section.comicsWrapper,
 div.topMain,
 div.blueBar {
     width: 100%;

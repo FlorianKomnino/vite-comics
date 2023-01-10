@@ -1,5 +1,55 @@
 <script>
-
+export default {
+    data() {
+        return {
+            dcComics: {
+                title: 'dc comics',
+                list: [
+                    'characters',
+                    'comics',
+                    'movies',
+                    'TV',
+                    'games',
+                    'videos',
+                    'news',
+                ]
+            },
+            shop: {
+                title: 'shop',
+                list: [
+                    'shop DC',
+                    'shop DC Collectibles',
+                ]
+            },
+            dc: {
+                title: 'dc',
+                list: [
+                    'terms of use',
+                    'privacy policy (new)',
+                    'ad choises',
+                    'advertising',
+                    'jobs',
+                    'subscriptions',
+                    'talent workshops',
+                    'CPSC certificates',
+                    'ratings',
+                    'shop help',
+                    'contact us',
+                ]
+            },
+            sites: {
+                title: 'sites',
+                list: [
+                    'DC',
+                    'MAD magazine',
+                    'DC kids',
+                    'DC universe',
+                    'DC power visa',
+                ]
+            },
+        }
+    }
+}
 </script>
 
 <template>
