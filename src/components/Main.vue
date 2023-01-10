@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <div class="contentGoesHere">
+    <div class="topMain">
         <div class="jumbotron">
             <img src="../assets/img/jumbotron.jpg" alt="jumbotron image">
         </div>
@@ -64,7 +64,7 @@ div.jumbotron {
     }
 }
 
-div.contentGoesHere {
+div.topMain {
     background-color: #1c1c1c;
     height: 350px;
 }
@@ -76,11 +76,14 @@ div.blueBar {
 
 section.comicsWrapper {
     color: white;
-    height: 300px;
     background-color: #1c1c1c;
 
     .innerContainer {
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 2rem 0;
     }
 }
 
@@ -95,7 +98,7 @@ section.comicsWrapper {
 
 
 section.comicsWrapper,
-div.contentGoesHere,
+div.topMain,
 div.blueBar {
     width: 100%;
     margin: 0 auto;
